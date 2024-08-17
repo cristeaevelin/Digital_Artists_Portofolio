@@ -30,7 +30,7 @@ const WorkCard = ({ work, onToggleVisibility, onImageUpload, onDeleteWork }) => 
           
           {work.imagePath && (
             <img 
-              src={`${API_BASE_URL}/uploads${work.imagePath}`} 
+              src={`${API_BASE_URL}${work.imagePath}`} 
               alt={work.title} 
               style={{ width: '200px', height: '150px', borderRadius: '0.5rem', margin: '0.5rem 0'
               }}/>
